@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savant Mullapudi (Portfolio)</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="toggle.css" />
+    <link rel="icon" type="image/png" href="hat_2.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="#" onclick="location.reload();">Portfolio</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#profile" onclick="toggleMenu()">Profile</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="Savant Portfolio pic 1.png" alt="My profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hey, I'm</p>
+        <h1 class="title">Savant Mullapudi</h1>
+        <p class="section__text__p2">Computer Science | Software Engineer | Data Analysis<br/><br/>
+            I'm passionate about tech and always curious, I love turning complex challenges into smart, data-driven wins.
+            Tech enthusiast who loves mixing software engineering with data analysis to create fun and impactful solutions. </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('Resume_(Savant).pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/savantmullapudi/', '_blank')"
+          />
+          <img
+            src="github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/Savant-Mullapudi/', '_blank')"
+          />
+        </div>
+      </div>
+    </section>
+ 
+      
+
+      
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="experience-details-container">
+            <p class="experience-info">
+                I bring a unique mix of skills to the table, with a background in programming, cloud tech, data visualization,
+                 networking, and machine learning. I enjoy solving complex problems and coming up with creative solutions.
+                  Whether I'm developing software or analyzing data for insights, I'm passionate about using my knowledge
+                   to help teams succeed. I'm ready to contribute and grow in any dynamic work environment. In this fast-paced tech world,
+                    these tools are the building blocks of the career I'm passionate about pursuing.</p>
+          <div class="about-containers">
+            <div class="details-container">
+              <div class="article-container">
+                <article>
+                  <i class="fa-brands fa-html5"></i>
+                  <div>
+                    <h2>HTML</h2>
+                  </div>
+                </article>
+                <article>
+                    <i class="fa-brands fa-css3-alt"></i>
+                  <div>
+                    <h2>CSS</h2>
+                  </div>
+                </article>
+                <article>
+                    <i class="fa-brands fa-js"></i>
+                  <div>
+                    <h2>JavaScript</h2>
+                  </div>
+                </article>
+                <article>
+                    <i class="fa-brands fa-aws"></i>
+                  <div>
+                    <h2>AWS</h2>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <div class="article-container">
+                <article>
+                    <i class="fa-solid fa-database"></i>
+                  <div>
+                    <h2>SQL</h2>
+                  </div>
+                </article>
+                <article>
+                    <i class="fa-brands fa-python"></i>
+                  <div>
+                    <h2>Python</h2>
+                  </div>
+                </article>
+                <article>
+                    <i class="fa-brands fa-java"></i>
+                  <div>
+                    <h2>Java</h2>
+                  </div>
+                </article>
+                <article>
+                  <img src="p.png" alt="Node JS icon" class="skill-icon" />
+                  <div>
+                    <h2>Power BI</h2>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+      
+
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="section-container">
+            <!-- Container for Experience and Education sections -->
+            <div class="experience-container">
+                <div class="experience-pic">
+                    <img src="final pic.png" alt="Experience image" class="side-image" />
+                </div>
+                <div class="experience-boxes">
+                    <!-- Experience Boxes -->
+                    <div class="experience-box">
+                        <div class="section-header">
+                            <img src="experience.png" alt="Experience icon" class="header-icon" />
+                            <a href="Resume_(Savant).pdf" target="_blank" class="experience-title">
+                                <h2>Experience</h2>
+                            </a>
+                        </div>
+                        <div class="experience-item">
+                            <img src="tcs.png" alt="Company icon" class="icon_exp" />
+                            <div class="experience-details">                            
+                                <h3>Tata Consultancy Services (July 2022 - July 2023)</h3>
+                                <p>Title: Assistant System Engineer</p> <!-- Added space for more info -->
+                            </div>
+                        </div>
+                        <div class="experience-item">
+                            <img src="pdx.jpeg" alt="Company icon" class="icon_exp" />
+                            <div class="experience-details">
+                                <h3>Pro Digital Worx (Feb 2022 - June 2022)</h3>
+                                <p>Title: Data Science Intern</p> <!-- Added space for more info -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Education Boxes -->
+                    <div class="education-box">
+                        <div class="section-header">
+                            <img src="education.png" alt="Education icon" class="header-icon" />
+                            <a href="Resume_(Savant).pdf" target="_blank" class="experience-title">
+                                <h2>Education</h2>
+                            </a>
+                        </div>
+                        <div class="education-item">
+                            <img src="uu.png" alt="Institute icon" class="icon_edu" />
+                            <div class="education-details">
+                                <h3>University of Utah (Aug 2023 - May 2025)</h3>
+                                <p>Degree: M.Sc Computer Science</p> <!-- Added space for more info -->
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <img src="mvgr.jpg" alt="Institute icon" class="icon_edu" />
+                            <div class="education-details">
+                                <h3>MVGR College of Engineering (Aug 2018 - July 2022)</h3>
+                                <p>Degree: B.Tech Computer Science</p> <!-- Added space for more info -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+      
+      
+
+
+
+
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-container">
+          <div class="project-tile">
+            <div class="project-img-container" style="background-image: url('soc.jpg');">
+              <div class="project-overlay">
+                <i class="fa-brands fa-github github-icon" onclick="window.open('https://github.com/Savant-Mullapudi/Soccer-Result-Prediction', '_blank');"></i>
+              </div>
+            </div>
+            <div class="project-content">
+                <a href="https://github.com/Savant-Mullapudi/Soccer-Result-Prediction" target="_blank" class="experience-title">
+                    <h2 class="project-title">Soccer Result Prediction</h2>
+                </a>
+              <p class="project-description">Pandas, ML algorithms & Data Visualization</p>
+            </div>
+          </div>
+          <div class="project-tile">
+            <div class="project-img-container" style="background-image: url('concert.avif');">
+              <div class="project-overlay">
+                <i class="fa-brands fa-github github-icon" onclick="window.open('https://github.com/Savant-Mullapudi/Cadence---Music-that-suits-you', '_blank');"></i>
+              </div>
+            </div>
+            <div class="project-content">
+                <a href="https://github.com/Savant-Mullapudi/Cadence---Music-that-suits-you" target="_blank" class="experience-title">
+                    <h2 class="project-title">Cadence - Music Webpage</h2>
+                </a>
+              <p class="project-description">HTML, CSS & JavaScript</p>
+            </div>
+          </div>
+          <div class="project-tile">
+            <div class="project-img-container" style="background-image: url('continents_2.jpg');">
+              <div class="project-overlay">
+                <i class="fa-brands fa-github github-icon" onclick="window.open('https://github.com/Savant-Mullapudi/Continent-based-Statistics', '_blank');"></i>
+              </div>
+            </div>
+            <div class="project-content">
+                <a href="https://github.com/Savant-Mullapudi/Continent-based-Statistics" target="_blank" class="experience-title">
+                    <h2 class="project-title">Continent Based Statistics</h2>
+                </a>
+              <p class="project-description">Power BI Report (Data Visualization & Dashboard)</p>
+            </div>
+          </div>
+          <div class="project-tile">
+            <div class="project-img-container" style="background-image: url('olympics.jpeg');">
+              <div class="project-overlay">
+                <i class="fa-brands fa-github github-icon" onclick="window.open('https://github.com/Savant-Mullapudi/Olympics-Tableau-Dashboard', '_blank');"></i>
+              </div>
+            </div>
+            <div class="project-content">
+                <a href="https://github.com/Savant-Mullapudi/Olympics-Tableau-Dashboard" target="_blank" class="experience-title">
+                    <h2 class="project-title">Olympics Dashboard</h2>
+                </a>
+              <p class="project-description">Tableau Dashboard (Visualization)</p>
+            </div>
+          </div>
+          <div class="project-tile">
+            <div class="project-img-container" style="background-image: url('netflix-logo.webp');">
+              <div class="project-overlay">
+                <i class="fa-brands fa-github github-icon" onclick="window.open('https://github.com/Savant-Mullapudi/Netflix-Dashboard', '_blank');"></i>
+              </div>
+            </div>
+            <div class="project-content">
+                <a href="https://github.com/Savant-Mullapudi/Netflix-Dashboard" target="_blank" class="experience-title">
+                    <h2 class="project-title">Netflix Dashboard</h2>
+                </a>
+              <p class="project-description">Tableau Dashboard (Visualization)</p>
+            </div>
+          </div>
+          <div class="project-tile">
+            <div class="project-img-container" style="background-image: url('age_cal.png');">
+              <div class="project-overlay">
+                <i class="fa-brands fa-github github-icon" onclick="window.open('https://github.com/Savant-Mullapudi/Know-Your-Age', '_blank');"></i>
+              </div>
+            </div>
+            <div class="project-content">
+                <a href="https://github.com/Savant-Mullapudi/Know-Your-Age" target="_blank" class="experience-title">
+                    <h2 class="project-title">Know Your Age</h2>
+                </a>
+              <p class="project-description">HTML, CSS & JavaScript</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      
+
+
+
+
+
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-left">
+            <p>I'm currently on the lookout for job opportunities and would love to connect if you have any leads or suggestions.
+                 Also, if you need an engineer to brainstorm with or a fellow enthusiast for sports, music, hiking or adventures,
+                  feel free to reach out!</p>
+          </div>
+          <div class="contact-info-right">
+            <div class="contact-info-container">
+              <i class="fa-regular fa-envelope contact-icon"></i>
+              <p><a href="mailto:savant.mullapudi@gmail.com">savant.mullapudi@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+              <i class="fa-solid fa-phone contact-icon"></i>
+              <p>(+1) 385-354-9746</p>
+            </div>
+            <div class="contact-info-container">
+              <i class="fa-brands fa-linkedin contact-icon"></i>
+              <p><a href="https://www.linkedin.com/in/savantmullapudi/" target="_blank">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+              <i class="fa-brands fa-github contact-icon"></i>
+              <p><a href="https://github.com/Savant-Mullapudi" target="_blank">GitHub</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
