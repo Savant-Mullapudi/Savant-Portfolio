@@ -39,7 +39,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 9vh;
-  background-color: #a3a9d5;
+  color: #9398c0;
+  background-color: #000;
   width: 100%;
   position:sticky;
   top: 0;
@@ -50,7 +51,7 @@ nav {
 
 .logo{
     font-size: 2rem;
-    color: #000;
+    color: #9398c0;
 }
 
 .logo:hover {
@@ -86,12 +87,14 @@ a:hover {
 .hamburger-menu {
   position: relative;
   display: inline-block;
+  color: #9398c0;
 }
 
 .hamburger-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: #9398c0;
   height: 24px;
   width: 30px;
   cursor: pointer;
@@ -100,7 +103,7 @@ a:hover {
 .hamburger-icon span {
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: #9398c0;
   transition: all 0.3 ease-in-out;
 }
 
@@ -215,7 +218,7 @@ section {
 }
 
 .section__text p {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .section__text__p1 {
@@ -223,7 +226,7 @@ section {
 }
 
 .section__text__p2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 3rem;
 }
 
@@ -240,6 +243,11 @@ section {
   gap: 1rem;
 }
 
+.highlight {
+  font-weight: bold; /* Makes the text bold */
+  color: #000000; /* Set to the desired color */
+}
+
 /* ICONS */
 
 .icon {
@@ -253,6 +261,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .btn {
@@ -274,14 +283,17 @@ section {
   cursor: pointer;
 }
 
-.btn-color-1,
+.btn-color-1{
+  background: rgb(0, 0, 0);
+  color: white;
+}
 .btn-color-2:hover {
   background: rgb(53, 53, 53);
   color: white;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: rgb(53, 53, 53);
 }
 
 .btn-color-2 {
@@ -335,7 +347,7 @@ section {
     margin-bottom: 3rem; /* Adjust space below the text */
     text-align: center; /* Center align the text */
     font-size: 1rem; /* Adjust the font size */
-    color: #363558/* Adjust the text color */
+    color: #363558;/* Adjust the text color */
   }
 
   .article-container {
@@ -382,105 +394,90 @@ section {
 
 
 
+
 /* EXPERIENCE SECTION */
 #experience {
-    position: relative;
-    margin-bottom: 4rem; /* Space below the section */
-  }
-  
-  .section-container {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem; /* Space between sections */
-  }
-  
-  .details-container {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem; /* Space between experience and education sections */
-  }
-  
-  .experience-container, .education-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-  }
-  
-  .experience-pic, .education-pic {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 5rem;
-  }
+  position: relative;
+  margin-bottom: 4rem; /* Space below the section */
+}
 
-  .experience-pic img, .education-pic img {
-    border-radius: 10%; /* Add border radius */
-  }
-  
-  .side-image {
-    width: 100%;
-    max-width: 500px; /* Adjust size as needed */
-    height: auto;
-  }
+.section-container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem; /* Space between sections */
+}
+
+/* Updated for Experience and Education Boxes */
+.experience-box, .education-box {
+  flex: 1;
+  padding: 1rem;
+  background: whitesmoke;
+  border-radius: 1rem;
+  border: 0.05rem solid black;
+  margin-bottom: 2rem;
+}
+
+/* Round Icon Style */
+.round-icon {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.experience-item, .education-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.icon_exp, .icon_edu {
+  width: 3rem; /* Set a uniform width */
+  height: 3rem; /* Set a uniform height */
+  border-radius: 30%; /* Make the icon round */
+  object-fit: cover; /* Ensure the image fits within the round shape without distortion */ 
+}
+
+.experience-details, .education-details {
+  flex: 1;
+}
+
+/* Remove the side image section */
+.experience-pic, .education-pic {
+  display: none;
+}
+
+.section-header {
+  display: flex;
+  align-items: center; /* Aligns items vertically in the center */
+  gap: 1rem; /* Space between the icon and the text */
+}
+
+.header-icon {
+  width: 3rem; /* Adjust size as needed */
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.experience-title h2 {
+  margin: 0; /* Remove default margin to keep alignment consistent */
+  margin-bottom: 1rem;
+}
 
   
-  
-  .experience-box {
-    flex: 2;
-    padding: 1rem;
-    background: #a3a9d5;
-    border-radius: 1rem;
-    border: 0.05rem solid black;
-    margin-bottom: 2rem;
-  }
-  
-  .education-box {
-    flex: 2;
-    padding: 1rem;
-    background: #a3a9d5;
-    border-radius: 1rem;
-    border: 0.05rem solid black;
-  }
-  
-  .section-header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .header-icon {
-    width: 2rem; /* Adjust size as needed */
-    height: 2rem;
-  }
-  
-  .experience-box h2, .education-box h2 {
-    margin: 0;
-  }
-  
-  .experience-item, .education-item {
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-  }
-  
-  .icon_exp {
-    width: 4rem;
-    height: 4rem;
-  }
+.experience-details h3, .education-details h3 {
+  margin-bottom: 0.5rem; /* Space between the title/degree and the description */
+}
 
-  .icon_edu {
-    width: 3rem;
-    height: 3rem;
-  }
-  
-  .experience-details, .education-details {
-    flex: 1;
-  }
-  
+.experience-details p, .education-details p {
+  margin-bottom: 0.5rem; /* Space between different paragraphs */
+}
 
+/* Add padding to the experience and education items for additional spacing */
+.experience-item, .education-item {
+  padding: 1rem; /* Add padding around the items */
+}
 
 
 
@@ -493,6 +490,7 @@ section {
 #projects {
     position: relative;
     padding: 2rem;
+    margin-top: 10rem;
   }
   
   .projects-container {
@@ -572,7 +570,7 @@ section {
 /* CONTACT */
 
 #contact {
-    margin-top: 4rem;
+    margin-top: 10rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -650,11 +648,18 @@ section {
 footer {
   height: 26vh;
   margin: 0 1rem;
+  border-bottom: 2px black; 
+  padding: 1rem;
+  text-align: center;
 }
 
 footer p {
   text-align: center;
+  border: #000;
 }
+
+
+
 
 
 
