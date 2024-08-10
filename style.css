@@ -357,6 +357,12 @@ section {
     justify-items: center; /* Center align the articles */
     margin-bottom: 2rem; /* Add some space between rows */
   }
+
+ @media (max-width: 768px) {
+    .article-container {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust for small screens */
+    }
+  }
   
   article {
     display: flex;
