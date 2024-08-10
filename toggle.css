@@ -101,3 +101,71 @@
       text-align: justify;
     }
   }
+
+/* Base styles for larger screens */
+.experience-box, .education-box {
+  flex: 1;
+  padding: 1rem;
+  background: whitesmoke;
+  border-radius: 1rem;
+  border: 0.05rem solid black;
+  margin-bottom: 2rem;
+}
+
+.experience-item, .education-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.icon_exp, .icon_edu {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 30%;
+  object-fit: cover;
+}
+
+.header-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+  .section-container {
+    flex-direction: column;
+    gap: 2rem; /* Adjust space between sections */
+  }
+
+  .experience-box, .education-box {
+    flex: none; /* Remove flex-grow behavior for mobile */
+    width: 100%; /* Full width for each box */
+    margin-bottom: 1rem; /* Adjust margin for mobile */
+  }
+
+  .experience-item, .education-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem; /* Reduce gap between icon and details */
+  }
+
+  .icon_exp, .icon_edu {
+    width: 2.5rem; /* Reduce icon size for mobile */
+    height: 2.5rem;
+  }
+
+  .header-icon {
+    width: 2.5rem; /* Reduce header icon size for mobile */
+    height: 2.5rem;
+  }
+
+  .experience-details h3, .education-details h3 {
+    margin-bottom: 0.25rem; /* Reduce margin for mobile */
+  }
+
+  .experience-details p, .education-details p {
+    margin-bottom: 0.25rem; /* Reduce margin for mobile */
+  }
+}
