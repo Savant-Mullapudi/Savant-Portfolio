@@ -49,23 +49,21 @@
 
     <section id="profile">
       <div class="section__pic-container">
-        <img src="Savant Portfolio pic 1.png" alt="My profile picture" />
+        <img src="Savant new_portfolio.png" alt="My profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hey, I'm</p>
         <h1 class="title">Savant Mullapudi</h1>
-        <p class="section__text__p2">Computer Science | Software Engineer | Data Analysis<br/><br/>
-            I'm passionate about tech and always curious, I love turning complex challenges into smart, data-driven wins.
-            Tech enthusiast who loves mixing software engineering with data analysis to create fun and impactful solutions. </p>
+        <p class="section__text__p2">Code. Analyze. Innovate.<br/><br/>
+            I am a <span class="highlight">tech enthusiast</span> who loves mixing software engineering with
+            data analysis to create <span class="highlight">fun</span> and <span class="highlight">impactful</span> solutions. 
+            I love turning complex challenges into smart, <span class="highlight">data-driven</span> wins.</p>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('Resume_(Savant).pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
+          <button class="btn btn-color-2" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
             Contact Info
+          </button>
+          <button class="btn btn-color-1"  onclick="window.open('Resume_(Savant).pdf')">
+            Resume
           </button>
         </div>
         <div id="socials-container">
@@ -162,66 +160,70 @@
 
 
     <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="section-container">
-            <!-- Container for Experience and Education sections -->
-            <div class="experience-container">
-                <div class="experience-pic">
-                    <img src="final pic.png" alt="Experience image" class="side-image" />
-                </div>
-                <div class="experience-boxes">
-                    <!-- Experience Boxes -->
-                    <div class="experience-box">
-                        <div class="section-header">
-                            <img src="experience.png" alt="Experience icon" class="header-icon" />
-                            <a href="Resume_(Savant).pdf" target="_blank" class="experience-title">
-                                <h2>Experience</h2>
-                            </a>
-                        </div>
-                        <div class="experience-item">
-                            <img src="tcs.png" alt="Company icon" class="icon_exp" />
-                            <div class="experience-details">                            
-                                <h3>Tata Consultancy Services (July 2022 - July 2023)</h3>
-                                <p>Title: Assistant System Engineer</p> <!-- Added space for more info -->
-                            </div>
-                        </div>
-                        <div class="experience-item">
-                            <img src="pdx.jpeg" alt="Company icon" class="icon_exp" />
-                            <div class="experience-details">
-                                <h3>Pro Digital Worx (Feb 2022 - June 2022)</h3>
-                                <p>Title: Data Science Intern</p> <!-- Added space for more info -->
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Education Boxes -->
-                    <div class="education-box">
-                        <div class="section-header">
-                            <img src="education.png" alt="Education icon" class="header-icon" />
-                            <a href="Resume_(Savant).pdf" target="_blank" class="experience-title">
-                                <h2>Education</h2>
-                            </a>
-                        </div>
-                        <div class="education-item">
-                            <img src="uu.png" alt="Institute icon" class="icon_edu" />
-                            <div class="education-details">
-                                <h3>University of Utah (Aug 2023 - May 2025)</h3>
-                                <p>Degree: M.Sc Computer Science</p> <!-- Added space for more info -->
-                            </div>
-                        </div>
-                        <div class="education-item">
-                            <img src="mvgr.jpg" alt="Institute icon" class="icon_edu" />
-                            <div class="education-details">
-                                <h3>MVGR College of Engineering (Aug 2018 - July 2022)</h3>
-                                <p>Degree: B.Tech Computer Science</p> <!-- Added space for more info -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      <p class="section__text__p1">So Far, This Has Been My</p>
+      <h1 class="title">Experience</h1>
+      <div class="section-container">
+          <!-- Professional Experience Section -->
+          <div class="experience-box">
+              <div class="section-header">
+                  <img src="experience.png" alt="Experience icon" class="header-icon round-icon" />
+                  <a href="Resume_(Savant).pdf" target="_blank" class="experience-title">
+                      <h2>Professional Experience</h2>
+                  </a>
+              </div>
+              <div class="experience-item">
+                  <img src="tcs.png" alt="Company icon" class="icon_exp round-icon" />
+                  <div class="experience-details">
+                      <h3>Tata Consultancy Services <br/>(July 2022 - July 2023)</h3>
+                      <p>Title: Assistant System Engineer</p>
+                      <p>I conducted an IoT project integrated with AWS, mastering key services like S3, Lambda, and KMS. 
+                        Leveraging my Python skills, I seamlessly applied and expanded my technical expertise in a real-world 
+                        professional setting.</p>
+                  </div>
+              </div>
+              <div class="experience-item">
+                  <img src="pdx.jpeg" alt="Company icon" class="icon_exp round-icon" />
+                  <div class="experience-details">
+                      <h3>Pro Digital Worx <br/>(Feb 2022 - June 2022)</h3>
+                      <p>Title: Data Science Intern</p>
+                      <p> I engaged in Machine Learning and DevOps, mastering Docker, Kubernetes, and Git.
+                         I also applied Data Science algorithms to real-world data challenges, enhancing both my
+                          technical and practical skills.</p>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Education Section -->
+          <div class="education-box">
+              <div class="section-header">
+                  <img src="education.png" alt="Education icon" class="header-icon round-icon" />
+                  <a href="Resume_(Savant).pdf" target="_blank" class="experience-title">
+                      <h2>Education</h2>
+                  </a>
+              </div>
+              <div class="education-item">
+                  <img src="uu.png" alt="Institute icon" class="icon_edu round-icon" />
+                  <div class="education-details">
+                      <h3>University of Utah <br/>(Aug 2023 - May 2025)</h3>
+                      <p>Degree: M.Sc Computer Science</p>
+                      <p>Coursework includes Machine Learning, Advanced Algorithms, Operating Systems, Computer Architecture, Data Management, and Human-Computer Interaction. 
+                        Additionally, I am serving as a Graduate TA for the Ethics in Data Science course.</p>
+                  </div>
+              </div>
+              <div class="education-item">
+                  <img src="mvgr.jpg" alt="Institute icon" class="icon_edu round-icon" />
+                  <div class="education-details">
+                      <h3>MVGR College of Engineering <br/>(Aug 2018 - July 2022)</h3>
+                      <p>Degree: B.Tech Computer Science</p>
+                      <p>Developed foundational skills in C, Java, and Python programming, along with Database Management Systems, 
+                        Data Structures, and Software Engineering. Additionally, I studied Compiler Design, Networking,
+                        Cybersecurity, and Ethical Practices of Computing.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
     
       
       
@@ -353,12 +355,14 @@
       
 
 
-    <footer>
 
-    </footer>
     <script src="script.js"></script>
   </body>
 </html>
+
+
+
+
 
 
 
