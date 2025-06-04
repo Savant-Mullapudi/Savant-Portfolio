@@ -1,0 +1,546 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savant Mullapudi (Portfolio)</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="toggle.css" />
+    <link rel="icon" type="image/png" href="hat_2.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a href="#" onclick="location.reload();">
+          <i class="fa-solid fa-briefcase" style="color:#27e9b5;"></i>
+        </a>
+      </div>
+      
+      <div>
+        <ul class="nav-links">
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <a href="#" onclick="location.reload();">
+          <i class="fa-solid fa-briefcase" style="color:#27e9b5;"></i>
+        </a>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#profile" onclick="toggleMenu()">Profile</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="Savant new_portfolio.png" alt="My profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hey, I'm</p>
+        <h1 class="title">Savant Mullapudi</h1>
+        <p class="section__text__p2">Code. Analyze. Innovate.<br/><br/>
+            I am a <span class="highlight">tech enthusiast</span> who loves mixing software engineering with
+            data analysis to create <span class="highlight">fun</span> and <span class="highlight">impactful</span> solutions. 
+            I love turning complex challenges into smart, <span class="highlight">data-driven</span> wins.</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
+            Contact Info
+          </button>
+          <button class="btn btn-color-1"  onclick="window.open('Resume_Savant.pdf')">
+            Resume
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/savantmullapudi/', '_blank')"
+          />
+          <img
+            src="github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/Savant-Mullapudi/', '_blank')"
+          />
+        </div>
+      </div>
+    </section>
+ 
+      
+
+      
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="experience-details-container">
+            <p class="experience-info">
+                I bring a unique mix of skills to the table, with a background in programming, web development, cloud tech, data visualization,
+                 networking, and machine learning. I enjoy solving complex problems and coming up with creative solutions.
+                  Whether I'm developing software or analyzing data for insights, I'm passionate about using my knowledge
+                   to help teams succeed. I'm ready to contribute and grow in any dynamic work environment. In this fast-paced tech world,
+                    these tools are the building blocks of the career I'm passionate about pursuing.<br></br><br>My Tech Toolbox</br></p>
+
+                    
+                    <div class="flip-card-container">
+                      <!-- Card 1: Programming & Frameworks -->
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <div class="card-icon-wrapper">
+                              <i class="fa-solid fa-code"></i>
+                              <p>Programming & Frameworks</p>
+                            </div>
+                          </div>
+                          <div class="flip-card-back">
+                            <div class="icon-grid">
+                              <a href="https://www.python.org/" target="_blank"><i class="fa-brands fa-python" title="Python"></i></a>
+                              <a href="https://www.oracle.com/java/" target="_blank"><i class="fa-brands fa-java" title="Java"></i></a>
+                              <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank"><i class="fa-solid fa-c" title="C"></i></a>
+                              <a href="https://en.cppreference.com/w/" target="_blank"><i class="fa-solid fa-c" title="C++"></i></a>
+                              <a href="https://www.w3schools.com/sql/" target="_blank"><i class="fa-solid fa-database" title="SQL"></i></a>
+                              <a href="https://go.dev/" target="_blank"><i class="fa-brands fa-golang" title="Golang"></i></a>
+                              <a href="https://dotnet.microsoft.com/" target="_blank"><i class="fa-brands fa-microsoft" title=".NET"></i></a>
+                            </div>
+                            <div class="card-footer-note">
+                              <p class="icon-note">Click on the icons to know about each tool</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                       <!-- Card 2: Web & UI Development -->
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <div class="card-icon-wrapper">
+                              <i class="fa-solid fa-desktop"></i>
+                              <p>Web & UI Development</p>
+                            </div>
+                          </div>
+                          <div class="flip-card-back">
+                            <div class="icon-grid">
+                              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><i class="fa-brands fa-html5" title="HTML"></i></a>
+                              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><i class="fa-brands fa-css3-alt" title="CSS"></i></a>
+                              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><i class="fa-brands fa-js" title="JavaScript"></i></a>
+                              <a href="https://reactjs.org/" target="_blank"><i class="fa-brands fa-react" title="ReactJS"></i></a>
+                              <a href="https://angular.io/" target="_blank"><i class="fa-brands fa-angular" title="Angular"></i></a>
+                              <a href="https://wordpress.org/" target="_blank"><i class="fa-brands fa-wordpress" title="WordPress"></i></a>
+                              <a href="https://www.php.net/" target="_blank"><i class="fa-brands fa-php" title="PHP"></i></a>
+                              <a href="https://www.figma.com/" target="_blank"><i class="fa-brands fa-figma" title="Figma"></i></a>
+                              <a href="https://doc.qt.io/qt-6/qtdesigner-manual.html" target="_blank"><i class="fa-solid fa-window-restore" title="Qt Creator"></i></a>
+                            </div>
+                            <div class="card-footer-note">
+                              <p class="icon-note">Click on the icons to know about each tool</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <!-- Card 3: Databases, Cloud & Backend -->
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <div class="card-icon-wrapper">
+                              <i class="fa-solid fa-server"></i>
+                              <p>Databases, Cloud & Backend</p>
+                            </div>
+                          </div>
+                          <div class="flip-card-back">
+                            <div class="icon-grid">
+                              <a href="https://aws.amazon.com/" target="_blank"><i class="fa-brands fa-aws" title="AWS"></i></a>
+                              <a href="https://www.postgresql.org/" target="_blank"><i class="fa-solid fa-database" title="PostgreSQL"></i></a>
+                              <a href="https://www.mysql.com/" target="_blank"><i class="fa-solid fa-database" title="MySQL"></i></a>
+                              <a href="https://www.mongodb.com/" target="_blank"><i class="fa-solid fa-database" title="MongoDB"></i></a>
+                              <a href="https://www.docker.com/" target="_blank"><i class="fa-brands fa-docker" title="Docker"></i></a>
+                              <a href="https://www.salesforce.com/" target="_blank"><i class="fa-brands fa-salesforce" title="Salesforce"></i></a>
+                            </div>
+                            <div class="card-footer-note">
+                              <p class="icon-note">Click on the icons to know about each tool</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <!-- Card 4: Data Science & Visualization -->
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <div class="card-icon-wrapper">
+                              <i class="fa-solid fa-chart-line"></i>
+                              <p>Data Science & Visualization</p>
+                            </div>
+                          </div>
+                          <div class="flip-card-back">
+                            <div class="icon-grid">
+                              <a href="https://pandas.pydata.org/" target="_blank"><i class="fa-brands fa-python" title="Pandas"></i></a>
+                              <a href="https://numpy.org/" target="_blank"><i class="fa-solid fa-chart-column" title="NumPy"></i></a>
+                              <a href="https://scikit-learn.org/" target="_blank"><i class="fa-solid fa-brain" title="Scikit-learn"></i></a>
+                              <a href="https://www.tableau.com/" target="_blank"><i class="fa-solid fa-table" title="Tableau"></i></a>
+                              <a href="https://powerbi.microsoft.com/" target="_blank"><i class="fa-solid fa-chart-pie" title="Power BI"></i></a>
+                              <a href="https://matplotlib.org/" target="_blank"><i class="fa-solid fa-chart-area" title="Matplotlib"></i></a>
+                            </div>
+                            <div class="card-footer-note">
+                              <p class="icon-note">Click on the icons to know about each tool</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                                      
+                    
+        </div>
+    </section>
+
+
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="experience-section">
+      <p class="section__text__p1">So Far, This Has Been My</p>  
+      <div class="experience-edu-header">
+        <h1 class="experience-title">Experience</h1>
+        <h1 class="education-title">Education</h1>
+      </div>
+      
+      <div class="experience-pair-grid">
+        <!-- Row 1 -->
+        <div class="experience-pair">
+          <!-- UofU -->
+          <div class="experience-card">
+            <div class="experience-header">
+              <img src="uu_bg.png" alt="University of Utah Logo" class="exp-logo-rect" />
+
+              <div>
+                <h3>University of Utah</h3>
+                <p class="exp-title">Research Assistant</p>
+                <p class="exp-dates">Jun 2025 - Present</p>
+              </div>
+            </div>
+            <ul>
+              <li>Design and develop the official PROST lab website to enhance research visibility, including sections for news updates and publications.</li>
+              <li>Co-authoring a research paper titled “Data Sharing and Privacy Attitudes” based on surveys conducted on various data privacy scenarios.</li>
+              <li>Analyze survey data using Python and ML models to identify patterns in privacy attitudes and generate summarized insights for publication.</li>
+            </ul>                
+          </div>
+
+          <!-- University of Utah -->
+          <div class="experience-card">
+            <div class="experience-header">
+              <img src="uu_bg.png" alt="U of U Logo" class="exp-logo-rect">
+              <div>
+                <h3>University of Utah</h3>
+                <p class="exp-title">M.Sc Computer Science</p>
+                <p class="exp-dates">Aug 2023 - May 2025</p>
+              </div>
+            </div>
+            <ul>
+              <li>Completed coursework in graduate algorithms, machine learning, data analysis & visualization, OS, security, data management, software testing, and HCI.</li>
+              <li>Served as a Teaching Assistant for Software Practices II (C++, Git, Qt, Box2D), conducting labs and assisting with software development practices.</li>
+              <li>Served as a Teaching Assistant for Ethics in Data Science, guiding students on privacy, fairness, and responsible AI principles.</li>
+            </ul>
+            
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="experience-pair">
+          <!-- TCS -->
+          <div class="experience-card">
+            <div class="experience-header">
+              <img src="tcs_bg.png" alt="TCS Logo" class="exp-logo-rect">
+              <div>
+                <h3>Tata Consultancy Services</h3>
+                <p class="exp-title">Assistant System Engineer</p>
+                <p class="exp-dates">Jul 2022 - Jul 2023</p>
+              </div>
+            </div>
+            <ul>
+              <li>Developed an internal dashboard using ReactJS, Node.js, and PostgreSQL to track real-time project metrics.</li>
+              <li>Deployed the application using Docker on AWS EC2 with secure JWT-based authentication.</li>
+              <li>Contributed to an IoT project using AWS Lambda and Kinesis for real-time streaming data processing.</li>
+              <li>Led internal AWS and DevOps workshops to boost team productivity and cloud adoption.</li>
+            </ul>
+            
+            
+          </div>
+
+
+          <!-- MVGR -->
+          <div class="experience-card">
+            <div class="experience-header">
+              <img src="mvgr_bg.png" alt="MVGR Logo" class="exp-logo-rect">
+              <div>
+                <h3>MVGR College of Engineering</h3>
+                <p class="exp-title">B.Tech Computer Science</p>
+                <p class="exp-dates">Aug 2018 - Jul 2022</p>
+              </div>
+            </div>
+            <ul>
+              <li>Studied core CS subjects including programming, data structures, algorithms, DBMS, and operating systems.</li>
+              <li>Gained a strong technical foundation and problem-solving skills that motivated pursuit of advanced studies.</li>
+              <li>Conducted coding workshops and mentored peers to strengthen programming fundamentals and practical skills.</li>
+            </ul>            
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="experience-pair">
+          <!-- Pro Digital Worx -->
+          <div class="experience-card">
+            <div class="experience-header">
+              <img src="pdx_bg.png" alt="PDX Logo" class="exp-logo-rect">
+              <div>
+                <h3>Pro Digital Worx</h3>
+                <p class="exp-title">Data Science Intern</p>
+                <p class="exp-dates">Feb 2022 - Jun 2022</p>
+              </div>
+            </div>
+            <ul>
+              <li>Developed ML models to analyze customer behavior and forecast demand using Python (pandas, scikit-learn).</li>
+              <li>Created interactive dashboards in Tableau and Power BI to present key insights.</li>
+              <li>Used Docker to package and deploy models for consistent testing across environments.</li>
+              <li>Led a DevOps session on scalable ML workflows and collaborated to optimize model performance.</li>
+            </ul>            
+          </div>
+
+          <!-- MVGR -->
+          <div class="experience-edu-row">
+            <div class="card experience"></div> <!-- Empty Experience card -->
+            <div class="card education">
+              <!-- Last education content here -->
+            </div>
+          </div>
+          
+
+        
+      </div>
+    </section>
+  
+    
+
+
+
+
+      <section id="projects">
+        <p class="section__text__p1">A Glimpse At My</p>
+        <h1 class="title">Recent Projects</h1>
+        <div class="projects-container">
+
+          <div class="project-tile">
+            <div class="project-img-container" style="background-image: url('vidstream.png');">
+              <div class="project-overlay">
+                <i class="fa-solid fa-eye view-icon" onclick="window.open('https://lambent-lamington-850b93.netlify.app/', '_blank');"></i>
+                <i class="fa-brands fa-github github-icon" onclick="window.open('https://github.com/Savant-Mullapudi/Relax-Streaming-Platform', '_blank');"></i>
+              </div>
+            </div>
+            <div class="project-content">
+                <a href="https://github.com/Savant-Mullapudi/Relax-Streaming-Platform" target="_blank" class="experience-title">
+                    <h2 class="project-title">Relax - Streaming Platform</h2>
+                </a>
+              <p class="project-description">ReactJS, HTML & CSS</p>
+            </div>
+          </div>
+
+          <div class="project-tile">
+            <div class="project-img-container" style="background-image: url('portfolio_img.jpeg');">
+              <div class="project-overlay">
+                <i class="fa-solid fa-eye view-icon" onclick="window.open('https://savant-mullapudi.github.io/Savant-Portfolio/', '_blank');"></i>
+                <i class="fa-brands fa-github github-icon" onclick="window.open('https://github.com/Savant-Mullapudi/Savant-Portfolio', '_blank');"></i>
+              </div>
+            </div>
+            <div class="project-content">
+                <a href="https://github.com/Savant-Mullapudi/Savant-Portfolio" target="_blank" class="experience-title">
+                    <h2 class="project-title">Know Your Age</h2>
+                </a>
+              <p class="project-description">HTML, CSS & JavaScript</p>
+            </div>
+          </div>
+
+          <div class="project-tile">
+            <div class="project-img-container" style="background-image: url('under_const_img.png');">
+              <div class="project-overlay">
+                <i class="fa-solid fa-eye view-icon" onclick="window.open('https://prost.cs.utah.edu/', '_blank');"></i>
+              </div>
+            </div>
+            <div class="project-content">
+                <a href="https://prost.cs.utah.edu/" target="_blank" class="experience-title">
+                    <h2 class="project-title">PROST - Research Website</h2>
+                </a>
+              <p class="project-description">PHP, MySQL, Themes</p>
+            </div>
+          </div>
+
+          <div class="project-tile">
+            <div class="project-img-container" style="background-image: url('soc.jpg');">
+              <div class="project-overlay">
+                <i class="fa-brands fa-github github-icon" onclick="window.open('https://github.com/Savant-Mullapudi/Soccer-Result-Prediction', '_blank');"></i>
+              </div>
+            </div>
+            <div class="project-content">
+                <a href="https://github.com/Savant-Mullapudi/Soccer-Result-Prediction" target="_blank" class="experience-title">
+                    <h2 class="project-title">Soccer Result Prediction</h2>
+                </a>
+              <p class="project-description">Pandas, ML algorithms & Data Visualization</p>
+            </div>
+          </div>
+
+          <div class="project-tile">
+            <div class="project-img-container" style="background-image: url('concert.avif');">
+              <div class="project-overlay">
+                <i class="fa-solid fa-eye view-icon" onclick="window.open('https://your-live-site-link.com', '_blank');"></i>
+                <i class="fa-brands fa-github github-icon" onclick="window.open('https://github.com/Savant-Mullapudi/Cadence---Music-that-suits-you', '_blank');"></i>
+              </div>
+            </div>
+            <div class="project-content">
+                <a href="https://github.com/Savant-Mullapudi/Cadence---Music-that-suits-you" target="_blank" class="experience-title">
+                    <h2 class="project-title">Cadence - Music Webpage</h2>
+                </a>
+              <p class="project-description">HTML, CSS & JavaScript</p>
+            </div>
+          </div>
+
+          <div class="project-tile">
+            <div class="project-img-container" style="background-image: url('netflix-logo.webp');">
+              <div class="project-overlay">
+                <i class="fa-solid fa-eye view-icon" onclick="window.open('https://public.tableau.com/shared/SCXW24BP6?:display_count=n&:origin=viz_share_link', '_blank');"></i>
+                <i class="fa-brands fa-github github-icon" onclick="window.open('https://github.com/Savant-Mullapudi/Netflix-Dashboard', '_blank');"></i>
+              </div>
+            </div>
+            <div class="project-content">
+                <a href="https://github.com/Savant-Mullapudi/Netflix-Dashboard" target="_blank" class="experience-title">
+                    <h2 class="project-title">Netflix Dashboard</h2>
+                </a>
+              <p class="project-description">Tableau Dashboard (Visualization)</p>
+            </div>
+          </div>
+
+          <div class="project-tile">
+            <div class="project-img-container" style="background-image: url('continents_2.jpg');">
+              <div class="project-overlay">
+                <i class="fa-solid fa-eye view-icon" onclick="window.open('https://app.powerbi.com/groups/me/reports/49927dc0-f03b-403d-9b10-0bae7fe79924/bf7eb03a9cefc4b067ca?experience=power-bi', '_blank');"></i>
+                <i class="fa-brands fa-github github-icon" onclick="window.open('https://github.com/Savant-Mullapudi/Continent-based-Statistics', '_blank');"></i>
+              </div>
+            </div>
+            <div class="project-content">
+                <a href="https://github.com/Savant-Mullapudi/Continent-based-Statistics" target="_blank" class="experience-title">
+                    <h2 class="project-title">Continent Based Statistics</h2>
+                </a>
+              <p class="project-description">Power BI Report (Data Visualization & Dashboard)</p>
+            </div>
+          </div>
+
+          <div class="project-tile">
+            <div class="project-img-container" style="background-image: url('olympics.jpeg');">
+              <div class="project-overlay">
+                <i class="fa-solid fa-eye view-icon" onclick="window.open('https://public.tableau.com/views/OlympicsDashboard_17174328826190/OlympicsDashboard?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link', '_blank');"></i>
+                <i class="fa-brands fa-github github-icon" onclick="window.open('https://github.com/Savant-Mullapudi/Olympics-Tableau-Dashboard', '_blank');"></i>
+              </div>
+            </div>
+            <div class="project-content">
+                <a href="https://github.com/Savant-Mullapudi/Olympics-Tableau-Dashboard" target="_blank" class="experience-title">
+                    <h2 class="project-title">Olympics Dashboard</h2>
+                </a>
+              <p class="project-description">Tableau Dashboard (Visualization)</p>
+            </div>
+          </div>
+
+          <div class="project-tile">
+            <div class="project-img-container" style="background-image: url('under_const_img.png');">
+              <div class="project-overlay">
+                <i class="fa-solid fa-eye view-icon" onclick="window.open('https://your-live-site-link.com', '_blank');"></i>
+              </div>
+            </div>
+            <div class="project-content">
+                <a href="https://your-live-site-link.com" target="_blank" class="experience-title">
+                    <h2 class="project-title">Play QR - Gaming Kiosk for Feedback</h2>
+                </a>
+              <p class="project-description">Figma, Unity</p>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      
+      
+      
+
+
+      <section id="contact" class="contact-section">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+      
+        <p class="contact-intro">
+          I'm currently on the lookout for job opportunities and would love to connect if you have any leads or suggestions.
+          Also, if you need an engineer to brainstorm with or a fellow enthusiast for sports, music, hiking or adventures,
+          feel free to reach out!
+        </p>
+      
+        <button class="cta-button" onclick="toggleContact()">👋 Let’s Talk – Reach Out!</button>
+      
+        <div id="contact-details" class="contact-details hidden">
+          <div class="contact-left">
+            <div class="contact-info-container">
+              <i class="fa-regular fa-envelope contact-icon"></i>
+              <a href="mailto:savant.mullapudi@gmail.com">savant.mullapudi@gmail.com</a>
+            </div>
+            <div class="contact-info-container">
+              <i class="fa-solid fa-phone contact-icon"></i>
+              <span>(+1) 385-354-9746</span>
+            </div>
+          </div>
+      
+          <div class="contact-right">
+            <div class="contact-info-container">
+              <i class="fa-brands fa-linkedin contact-icon"></i>
+              <a href="https://www.linkedin.com/in/savantmullapudi/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="contact-info-container">
+              <i class="fa-brands fa-github contact-icon"></i>
+              <a href="https://github.com/Savant-Mullapudi" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        function toggleContact() {
+          const section = document.getElementById('contact-details');
+          section.classList.toggle('hidden');
+        }
+      </script>
+      
+      
+      <footer class="footer">
+        <p>Thank you for visiting my portfolio!</p>
+        <p>Designed & built with ❤️ by Savant Mullapudi</p>
+      </footer>      
+      
+      
+
+    <script src="script.js"></script>
+  </body>
+</html>
