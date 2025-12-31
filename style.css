@@ -33,6 +33,18 @@ a,
   transition: all 300ms ease;
 }
 
+/* Portfolio Icon */
+.portfolio-icon {
+  color: #27e9b5;          
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.logo a:hover .portfolio-icon {
+  color: #ffffff;
+}
+
 /* DESKTOP NAV */
 
 nav,
@@ -77,10 +89,8 @@ a {
 }
 
 a:hover {
-  color: #808fac;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: #808fac;
+  color: #27e9b5;
+  text-decoration-color: #27e9b5;
 }
 
 
@@ -319,11 +329,18 @@ section {
 }
   
   
-.icon {
+.social-icon {
+  font-size: 2rem;
+  color: #ffffff;
   cursor: pointer;
-  height: 2rem;
-  filter: brightness(0) invert(1);  
+  transition: color 0.3s ease, transform 0.2s ease;
 }
+
+.social-icon:hover {
+  color: #27e9bf; 
+  transform: scale(1.1);
+}
+
 
 
 
@@ -643,10 +660,6 @@ ul {
     transition: opacity 0.3s ease;
   }
   
-  .project-img-container:hover .project-overlay {
-    opacity: 1;
-  }
-  
   .github-icon,
   .view-icon {
     font-size: 1.8rem;
@@ -726,10 +739,6 @@ ul {
 .contact-info-container a {
   color: #ffffff;
   text-decoration: none;
-}
-
-.contact-info-container a:hover {
-  text-decoration: underline;
 }
 
 .contact-icon {
