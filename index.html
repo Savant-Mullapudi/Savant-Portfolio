@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,7 +16,7 @@
     <nav id="desktop-nav">
       <div class="logo">
         <a href="#" onclick="location.reload();">
-          <i class="fa-solid fa-briefcase" style="color:#27e9b5;"></i>
+          <i class="fa-solid fa-briefcase portfolio-icon"></i>
         </a>
       </div>
       
@@ -54,8 +53,6 @@
     </nav>
 
 
-
-
     <section id="profile">
       <div class="section__pic-container">
         <img src="Savant new_portfolio.png" alt="My profile picture" />
@@ -76,24 +73,14 @@
           </button>
         </div>
         <div id="socials-container">
-          <img
-            src="linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="window.open('https://www.linkedin.com/in/savantmullapudi/', '_blank')"
-          />
-          <img
-            src="github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="window.open('https://github.com/Savant-Mullapudi/', '_blank')"
-          />
+          <i class="fa-brands fa-linkedin social-icon"
+             onclick="window.open('https://www.linkedin.com/in/savantmullapudi/', '_blank')"></i>
+        
+          <i class="fa-brands fa-github social-icon"
+             onclick="window.open('https://github.com/Savant-Mullapudi/', '_blank')"></i>
         </div>
       </div>
     </section>
- 
-      
-
       
     <section id="about">
         <p class="section__text__p1">Get To Know More</p>
@@ -122,6 +109,7 @@
                               <a href="https://www.python.org/" target="_blank"><i class="fa-brands fa-python" title="Python"></i></a>
                               <a href="https://www.oracle.com/java/" target="_blank"><i class="fa-brands fa-java" title="Java"></i></a>
                               <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank"><i class="fa-solid fa-c" title="C"></i></a>
+                              <a href="https://www.swift.org/" target="_blank"><i class="fa-brands fa-swift" title="Swift"></i></a>
                               <a href="https://en.cppreference.com/w/" target="_blank"><i class="fa-solid fa-c" title="C++"></i></a>
                               <a href="https://www.w3schools.com/sql/" target="_blank"><i class="fa-solid fa-database" title="SQL"></i></a>
                               <a href="https://go.dev/" target="_blank"><i class="fa-brands fa-golang" title="Golang"></i></a>
@@ -216,131 +204,185 @@
         </div>
     </section>
 
-
-
-    <!-- EXPERIENCE SECTION -->
-    <section id="experience" class="experience-section">
-      <p class="section__text__p1">So Far, This Has Been My</p>  
-      <div class="experience-edu-header">
-        <h1 class="experience-title">Experience</h1>
-        <h1 class="education-title">Education</h1>
-      </div>
-      
-      <div class="experience-pair-grid">
-        <!-- Row 1 -->
-        <div class="experience-pair">
-          <!-- UofU -->
-          <div class="experience-card">
-            <div class="experience-header">
-              <img src="uu_bg.png" alt="University of Utah Logo" class="exp-logo-rect" />
-
-              <div>
-                <h3>University of Utah</h3>
-                <p class="exp-title">Research Assistant</p>
-                <p class="exp-dates">Jun 2025 - Present</p>
-              </div>
-            </div>
-            <ul>
-              <li>Refactored a course management system into a modern, user-friendly web application using React, Material-UI, and Node.js for better content access.</li>
-              <li>Designed a secure, scalable backend system for course modules with REST APIs, JWT, and PostgreSQL, reducing manual admin work by 40%.</li>
-              <li>Developed an academic research portal with HTML, CSS, JavaScript, PHP, and MongoDB, increasing user engagement by 30%.</li>
-            </ul>                
-          </div>
-
-          <!-- University of Utah -->
-          <div class="experience-card">
-            <div class="experience-header">
-              <img src="uu_bg.png" alt="U of U Logo" class="exp-logo-rect">
-              <div>
-                <h3>University of Utah</h3>
-                <p class="exp-title">M.Sc Computer Science</p>
-                <p class="exp-dates">Aug 2023 - May 2025</p>
-              </div>
-            </div>
-            <ul>
-              <li>Completed coursework in graduate algorithms, machine learning, data analysis & visualization, OS, security, data management, software testing, and HCI.</li>
-              <li>Served as a Teaching Assistant for Software Practices II (C++, Git, Qt, Box2D), conducting labs and assisting with software development practices.</li>
-              <li>Served as a Teaching Assistant for Ethics in Data Science, guiding students on privacy, fairness, and responsible AI principles.</li>
-            </ul>
-            
-          </div>
-        </div>
-
-        <!-- Row 2 -->
-        <div class="experience-pair">
-          <!-- TCS -->
-          <div class="experience-card">
-            <div class="experience-header">
-              <img src="tcs_bg.png" alt="TCS Logo" class="exp-logo-rect">
-              <div>
-                <h3>Tata Consultancy Services</h3>
-                <p class="exp-title">Assistant System Engineer</p>
-                <p class="exp-dates">Jul 2022 - Jul 2023</p>
-              </div>
-            </div>
-            <ul>
-              <li>Built order tracking and profile management features for an enterprise e-commerce portal using ReactJS, Node.js, and PostgreSQL, serving 15,000+ global users.</li>
-              <li>Used AWS EC2, S3, Kinesis, and CodeBuild to enable scalable deployment, real-time data flow, and automated builds.</li>
-              <li>Developed a real-time task tracking system with Angular, .NET Core, SignalR, and Docker, reducing client tickets by 35%.</li>
-            </ul>  
-          </div>
-
-
-          <!-- MVGR -->
-          <div class="experience-card">
-            <div class="experience-header">
-              <img src="mvgr_bg.png" alt="MVGR Logo" class="exp-logo-rect">
-              <div>
-                <h3>MVGR College of Engineering</h3>
-                <p class="exp-title">B.Tech Computer Science</p>
-                <p class="exp-dates">Aug 2018 - Jul 2022</p>
-              </div>
-            </div>
-            <ul>
-              <li>Studied core CS subjects including programming, data structures, algorithms, DBMS, and operating systems.</li>
-              <li>Gained a strong technical foundation and problem-solving skills that motivated pursuit of advanced studies.</li>
-              <li>Conducted coding workshops and mentored peers to strengthen programming fundamentals and practical skills.</li>
-            </ul>            
-          </div>
-        </div>
-
-        <!-- Row 3 -->
-        <div class="experience-pair">
-          <!-- Pro Digital Worx -->
-          <div class="experience-card">
-            <div class="experience-header">
-              <img src="pdx_bg.png" alt="PDX Logo" class="exp-logo-rect">
-              <div>
-                <h3>Pro Digital Worx</h3>
-                <p class="exp-title">Data Science Intern</p>
-                <p class="exp-dates">Feb 2022 - Jun 2022</p>
-              </div>
-            </div>
-            <ul>
-              <li>Developed ML models to analyze customer behavior and forecast demand using Python (pandas, scikit-learn).</li>
-              <li>Created interactive dashboards in Tableau and Power BI to present key insights.</li>
-              <li>Used Docker to package and deploy models for consistent testing across environments.</li>
-              <li>Led a DevOps session on scalable ML workflows and collaborated to optimize model performance.</li>
-            </ul>            
-          </div>
-
-          <!-- MVGR -->
-          <div class="experience-edu-row">
-            <div class="card experience"></div> <!-- Empty Experience card -->
-            <div class="card education">
-              <!-- Last education content here -->
-            </div>
-          </div>
-          
-
-        
-      </div>
-    </section>
+<!-- EXPERIENCE SECTION -->
+<section id="experience" class="experience-section">
+  <p class="section__text__p1">So Far, This Has Been My</p>
+  <h1 class="title">Experience</h1>
   
-    
+  <!-- EXPERIENCE ROW -->  
+  <div class="experience-grid">
+    <!-- Experience Card 1 -->
+    <div class="experience-flip-card">
+      <div class="experience-flip-inner">
+        <!-- Front Side -->
+        <div class="experience-flip-front">
+          <img src="Trace_AQ.png" alt="Trace AQ Logo" class="exp-front-logo">
+          <h3>Trace Air Quality</h3>
+        </div>
+        <!-- Back Side -->
+        <div class="experience-flip-back">
+          <div class="experience-header">
+            <img src="Trace_AQ.png" alt="Company Logo" class="exp-logo-rect">
+            <div>
+              <h3>Trace Air Quality</h3>
+              <p class="exp-title">Full Stack Engineer</p>
+              <p class="exp-dates">Sep 2025 - Present</p>
+            </div>
+          </div>
+          <ul>
+            <li>Developed an iOS mobile application, Flow AQ, that provides interactive 4-day air quality forecast charts and sends push notifications when AQI levels exceed set thresholds.</li>
+            <li>Built and deployed Trace AQ | ADAPT display screens to show current air quality and 4-day forecasts, currently used in universities and healthcare facilities.</li>
+            <li>Designed and improved the front-end of Trace AQ | Aero, a research-focused platform that helps scientists and researchers explore 4-day air quality forecasts through animated and interactive visualizations.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
+    <!-- Experience Card 2 -->
+    <div class="experience-flip-card">
+      <div class="experience-flip-inner">
+        <!-- Front Side -->
+        <div class="experience-flip-front">
+          <img src="uu_bg.png" alt="University of Utah Logo" class="exp-front-logo">
+          <h3>University of Utah</h3>
+        </div>
+        <!-- Back Side -->
+        <div class="experience-flip-back">
+          <div class="experience-header">
+            <img src="uu_bg.png" alt="University of Utah Logo" class="exp-logo-rect">
+            <div>
+              <h3>University of Utah</h3>
+              <p class="exp-title">Research Assistant</p>
+              <p class="exp-dates">Jun 2024 - Aug 2025</p>
+            </div>
+          </div>
+          <ul>
+            <li>Refactored a course management system into a modern, user-friendly web application using React, Material-UI, and Node.js for better content access.</li>
+            <li>Designed a secure, scalable backend system for course modules with REST APIs, JWT, and PostgreSQL, reducing manual admin work by 40%.</li>
+            <li>Developed an academic research portal with HTML, CSS, JavaScript, PHP, and MongoDB, increasing user engagement by 30%.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
+    <!-- Experience Card 3 -->
+    <div class="experience-flip-card">
+      <div class="experience-flip-inner">
+        <!-- Front Side -->
+        <div class="experience-flip-front">
+          <img src="tcs_bg.png" alt="TCS Logo" class="exp-front-logo">
+          <h3>Tata Consultancy Services</h3>
+        </div>
+        <!-- Back Side -->
+        <div class="experience-flip-back">
+          <div class="experience-header">
+            <img src="tcs_bg.png" alt="TCS Logo" class="exp-logo-rect">
+            <div>
+              <h3>Tata Consultancy Services</h3>
+              <p class="exp-title">Assistant System Engineer</p>
+              <p class="exp-dates">Jul 2022 - Jul 2023</p>
+            </div>
+          </div>
+          <ul>
+            <li>Built order tracking and profile management features for an enterprise e-commerce portal using ReactJS, Node.js, and PostgreSQL, serving 15,000+ global users.</li>
+            <li>Used AWS EC2, S3, Kinesis, and CodeBuild to enable scalable deployment, real-time data flow, and automated builds.</li>
+            <li>Developed a real-time task tracking system with Angular, .NET Core, SignalR, and Docker, reducing client tickets by 35%.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
+    <!-- Experience Card 4 -->
+    <div class="experience-flip-card">
+      <div class="experience-flip-inner">
+        <!-- Front Side -->
+        <div class="experience-flip-front">
+          <img src="pdwx_logo.png" alt="PDX Logo" class="exp-front-logo">
+          <h3>Pro Digital Worx</h3>
+        </div>
+        <!-- Back Side -->
+        <div class="experience-flip-back">
+          <div class="experience-header">
+            <img src="pdwx_logo.png" alt="PDX Logo" class="exp-logo-rect">
+            <div>
+              <h3>Pro Digital Worx</h3>
+              <p class="exp-title">Data Science Intern</p>
+              <p class="exp-dates">Feb 2022 - Jun 2022</p>
+            </div>
+          </div>
+          <ul>
+            <li>Developed ML models to analyze customer behavior and forecast demand using Python (pandas, scikit-learn).</li>
+            <li>Created interactive dashboards in Tableau and Power BI to present key insights.</li>
+            <li>Used Docker to package and deploy models for consistent testing across environments.</li>
+            <li>Led a DevOps session on scalable ML workflows and collaborated to optimize model performance.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDUCATION ROW -->
+  <div class="section-header">
+    <p class="section__text__p1">And</p>
+    <h2 class="section-subtitle">Education</h2>
+  </div>
+  
+  <div class="education-grid">
+    <!-- Education Card 1 -->
+    <div class="experience-flip-card">
+      <div class="experience-flip-inner">
+        <!-- Front Side -->
+        <div class="experience-flip-front">
+          <img src="uu_bg.png" alt="U of U Logo" class="exp-front-logo">
+          <h3>University of Utah</h3>
+        </div>
+        <!-- Back Side -->
+        <div class="experience-flip-back">
+          <div class="experience-header">
+            <img src="uu_bg.png" alt="U of U Logo" class="exp-logo-rect">
+            <div>
+              <h3>University of Utah</h3>
+              <p class="exp-title">M.Sc Computer Science</p>
+              <p class="exp-dates">Aug 2023 - May 2025</p>
+            </div>
+          </div>
+          <ul>
+            <li>Completed coursework in graduate algorithms, machine learning, data analysis & visualization, OS, security, data management, software testing, and HCI.</li>
+            <li>Served as a Teaching Assistant for Software Practices II (C++, Git, Qt, Box2D), conducting labs and assisting with software development practices.</li>
+            <li>Served as a Teaching Assistant for Ethics in Data Science, guiding students on privacy, fairness, and responsible AI principles.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education Card 2 -->
+    <div class="experience-flip-card">
+      <div class="experience-flip-inner">
+        <!-- Front Side -->
+        <div class="experience-flip-front">
+          <img src="mvgr_bg.png" alt="MVGR Logo" class="exp-front-logo">
+          <h3>MVGR College of Engineering</h3>
+        </div>
+        <!-- Back Side -->
+        <div class="experience-flip-back">
+          <div class="experience-header">
+            <img src="mvgr_bg.png" alt="MVGR Logo" class="exp-logo-rect">
+            <div>
+              <h3>MVGR College of Engineering</h3>
+              <p class="exp-title">B.Tech Computer Science</p>
+              <p class="exp-dates">Aug 2018 - Jul 2022</p>
+            </div>
+          </div>
+          <ul>
+            <li>Studied core CS subjects including programming, data structures, algorithms, DBMS, and operating systems.</li>
+            <li>Gained a strong technical foundation and problem-solving skills that motivated pursuit of advanced studies.</li>
+            <li>Conducted coding workshops and mentored peers to strengthen programming fundamentals and practical skills.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section id="projects">
         <p class="section__text__p1">A Glimpse At My</p>
@@ -348,17 +390,17 @@
         <div class="projects-container">
 
           <div class="project-tile">
-            <div class="project-img-container" style="background-image: url('vidstream.png');">
+            <div class="project-img-container" style="background-image: url('Flow_AQ.jpeg');">
               <div class="project-overlay">
-                <i class="fa-solid fa-eye view-icon" onclick="window.open('https://lambent-lamington-850b93.netlify.app/', '_blank');"></i>
-                <i class="fa-brands fa-github github-icon" onclick="window.open('https://github.com/Savant-Mullapudi/Relax-Streaming-Platform', '_blank');"></i>
+                <i class="fa-solid fa-eye view-icon" onclick="window.open('https://www.flowaq.com/', '_blank');"></i>
+                <i class="fa-solid fa-link link-icon" onclick="window.open('https://apps.apple.com/us/app/weather/id1069513131', '_blank');" title="Project link"></i>
               </div>
             </div>
             <div class="project-content">
-                <a href="https://github.com/Savant-Mullapudi/Relax-Streaming-Platform" target="_blank" class="experience-title">
-                    <h2 class="project-title">Relax - Streaming Platform</h2>
+                <a href="https://www.flowaq.com/" target="_blank" class="experience-title">
+                    <h2 class="project-title">Flow AQ Mobile App</h2>
                 </a>
-              <p class="project-description">ReactJS, HTML & CSS</p>
+              <p class="project-description">Swift, XCode, AWS</p>
             </div>
           </div>
 
@@ -370,30 +412,53 @@
               </div>
             </div>
             <div class="project-content">
-                <a href="https://github.com/Savant-Mullapudi/Savant-Portfolio" target="_blank" class="experience-title">
-                    <h2 class="project-title">Know Your Age</h2>
+                <a href="https://savant-mullapudi.github.io/Savant-Portfolio/" target="_blank" class="experience-title">
+                    <h2 class="project-title">Portfolio Website</h2>
                 </a>
-              <p class="project-description">HTML, CSS & JavaScript</p>
+              <p class="project-description">HTML, CSS, JavaScript</p>
             </div>
           </div>
 
           <div class="project-tile">
-            <div class="project-img-container" style="background-image: url('under_const_img.png');">
+            <div class="project-img-container" style="background-image: url('ADAPTHS.jpeg');">
               <div class="project-overlay">
-                <i class="fa-solid fa-eye view-icon" onclick="window.open('https://prost.cs.utah.edu/', '_blank');"></i>
+                <i class="fa-solid fa-eye view-icon" onclick="window.open('https://adapt-hospitality-screens.netlify.app/', '_blank');"></i>
+                <i class="fa-brands fa-github github-icon" onclick="window.open('https://github.com/Savant-Mullapudi/adapt-hospitality-screens', '_blank');"></i>
               </div>
             </div>
             <div class="project-content">
-                <a href="https://prost.cs.utah.edu/" target="_blank" class="experience-title">
-                    <h2 class="project-title">PROST - Research Website</h2>
+                <a href="https://adapt-hospitality-screens.netlify.app/" target="_blank" class="experience-title">
+                    <h2 class="project-title">ADAPT Hospitality Screens</h2>
                 </a>
-              <p class="project-description">PHP, MySQL, Themes</p>
+              <p class="project-description">TypeScript, JavaScript, AWS</p>
+            </div>
+          </div>
+
+          <div class="project-tile">
+            <div class="project-img-container" style="background-image: url('vidstream.png');">
+              <div class="project-overlay">
+                <i class="fa-solid fa-eye view-icon" onclick="window.open('https://relax-streaming-platform.netlify.app/', '_blank');"></i>
+                <i class="fa-brands fa-github github-icon" onclick="window.open('https://github.com/Savant-Mullapudi/Relax-Streaming-Platform', '_blank');"></i>
+              </div>
+            </div>
+            <div class="project-content">
+                <a href="https://relax-streaming-platform.netlify.app/" target="_blank" class="experience-title">
+                    <h2 class="project-title">Relax - Streaming Platform</h2>
+                </a>
+              <p class="project-description">ReactJS, HTML, CSS</p>
             </div>
           </div>
 
           <div class="project-tile">
             <div class="project-img-container" style="background-image: url('soc.jpg');">
               <div class="project-overlay">
+                <i class="fa-solid fa-eye view-icon"
+                  onclick="openMultiple([
+                    'https://colab.research.google.com/github/Savant-Mullapudi/Soccer-Result-Prediction/blob/main/start_scraping_data.ipynb',
+                    'https://colab.research.google.com/github/Savant-Mullapudi/Soccer-Result-Prediction/blob/main/start_predicting_data.ipynb',
+                    'https://colab.research.google.com/github/Savant-Mullapudi/Soccer-Result-Prediction/blob/main/start_visualizing_data.ipynb'
+                  ])">
+                </i>
                 <i class="fa-brands fa-github github-icon" onclick="window.open('https://github.com/Savant-Mullapudi/Soccer-Result-Prediction', '_blank');"></i>
               </div>
             </div>
@@ -401,22 +466,22 @@
                 <a href="https://github.com/Savant-Mullapudi/Soccer-Result-Prediction" target="_blank" class="experience-title">
                     <h2 class="project-title">Soccer Result Prediction</h2>
                 </a>
-              <p class="project-description">Pandas, ML algorithms & Data Visualization</p>
+              <p class="project-description">Pandas, ML algorithms, Data Visualization</p>
             </div>
           </div>
 
           <div class="project-tile">
             <div class="project-img-container" style="background-image: url('concert.avif');">
               <div class="project-overlay">
-                <i class="fa-solid fa-eye view-icon" onclick="window.open('https://your-live-site-link.com', '_blank');"></i>
+                <i class="fa-solid fa-eye view-icon" onclick="window.open('https://cadencemusics.netlify.app/', '_blank');"></i>
                 <i class="fa-brands fa-github github-icon" onclick="window.open('https://github.com/Savant-Mullapudi/Cadence---Music-that-suits-you', '_blank');"></i>
               </div>
             </div>
             <div class="project-content">
-                <a href="https://github.com/Savant-Mullapudi/Cadence---Music-that-suits-you" target="_blank" class="experience-title">
+                <a href="https://cadencemusics.netlify.app/" target="_blank" class="experience-title">
                     <h2 class="project-title">Cadence - Music Webpage</h2>
                 </a>
-              <p class="project-description">HTML, CSS & JavaScript</p>
+              <p class="project-description">HTML, CSS, JavaScript</p>
             </div>
           </div>
 
@@ -428,7 +493,7 @@
               </div>
             </div>
             <div class="project-content">
-                <a href="https://github.com/Savant-Mullapudi/Netflix-Dashboard" target="_blank" class="experience-title">
+                <a href="https://public.tableau.com/shared/SCXW24BP6?:display_count=n&:origin=viz_share_link" target="_blank" class="experience-title">
                     <h2 class="project-title">Netflix Dashboard</h2>
                 </a>
               <p class="project-description">Tableau Dashboard (Visualization)</p>
@@ -443,7 +508,7 @@
               </div>
             </div>
             <div class="project-content">
-                <a href="https://github.com/Savant-Mullapudi/Continent-based-Statistics" target="_blank" class="experience-title">
+                <a href="https://app.powerbi.com/groups/me/reports/49927dc0-f03b-403d-9b10-0bae7fe79924/bf7eb03a9cefc4b067ca?experience=power-bi" target="_blank" class="experience-title">
                     <h2 class="project-title">Continent Based Statistics</h2>
                 </a>
               <p class="project-description">Power BI Report (Data Visualization & Dashboard)</p>
@@ -458,33 +523,15 @@
               </div>
             </div>
             <div class="project-content">
-                <a href="https://github.com/Savant-Mullapudi/Olympics-Tableau-Dashboard" target="_blank" class="experience-title">
+                <a href="https://public.tableau.com/views/OlympicsDashboard_17174328826190/OlympicsDashboard?:language=en-US&publish=yes&:sid=&:display_count=n&:origin=viz_share_link" target="_blank" class="experience-title">
                     <h2 class="project-title">Olympics Dashboard</h2>
                 </a>
               <p class="project-description">Tableau Dashboard (Visualization)</p>
             </div>
           </div>
-
-          <div class="project-tile">
-            <div class="project-img-container" style="background-image: url('under_const_img.png');">
-              <div class="project-overlay">
-                <i class="fa-solid fa-eye view-icon" onclick="window.open('https://your-live-site-link.com', '_blank');"></i>
-              </div>
-            </div>
-            <div class="project-content">
-                <a href="https://your-live-site-link.com" target="_blank" class="experience-title">
-                    <h2 class="project-title">Play QR - Gaming Kiosk for Feedback</h2>
-                </a>
-              <p class="project-description">Figma, Unity</p>
-            </div>
-          </div>
           
         </div>
       </section>
-      
-      
-      
-
 
       <section id="contact" class="contact-section">
         <p class="section__text__p1">Get in Touch</p>
@@ -496,28 +543,28 @@
           feel free to reach out!
         </p>
       
-        <button class="cta-button" onclick="toggleContact()">👋 Let’s Talk – Reach Out!</button>
+        <button class="cta-button" onclick="toggleContact()">👋 Let's Talk – Reach Out!</button>
       
         <div id="contact-details" class="contact-details hidden">
           <div class="contact-left">
             <div class="contact-info-container">
               <i class="fa-regular fa-envelope contact-icon"></i>
-              <a href="mailto:savant.mullapudi@gmail.com">savant.mullapudi@gmail.com</a>
+              <a href="mailto:savant.mullapudi@gmail.com" class="contact-link">savant.mullapudi@gmail.com</a>
             </div>
             <div class="contact-info-container">
               <i class="fa-solid fa-phone contact-icon"></i>
-              <span>(+1) 385-354-9746</span>
+              <a href="tel:+13853549746" class="contact-link">(+1) 385-354-9746</a>
             </div>
           </div>
       
           <div class="contact-right">
             <div class="contact-info-container">
               <i class="fa-brands fa-linkedin contact-icon"></i>
-              <a href="https://www.linkedin.com/in/savantmullapudi/" target="_blank">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/savantmullapudi/" target="_blank" class="contact-link">LinkedIn</a>
             </div>
             <div class="contact-info-container">
               <i class="fa-brands fa-github contact-icon"></i>
-              <a href="https://github.com/Savant-Mullapudi" target="_blank">GitHub</a>
+              <a href="https://github.com/Savant-Mullapudi" target="_blank" class="contact-link">GitHub</a>
             </div>
           </div>
         </div>
