@@ -5,8 +5,21 @@ function toggleMenu() {
     icon.classList.toggle("open");
   }
 
-  function openMultiple(urls) {
-    for (const url of urls) {
-      window.open(url, '_blank', 'noopener,noreferrer');
-    }
+function openMultiple(urls) {
+  if (!Array.isArray(urls) || urls.length === 0) return;
+  
+  window.open(urls[0], '_blank', 'noopener,noreferrer');
+  
+  for (let i = 1; i < urls.length; i++) {
+    setTimeout(() => {
+      const a = document.createElement('a');
+      a.href = urls[i];
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      a.style.display = 'none';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }, i * 250); 
   }
+}
