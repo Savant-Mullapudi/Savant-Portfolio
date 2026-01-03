@@ -4,3 +4,9 @@ function toggleMenu() {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
   }
+
+  function openMultiple(urls) {
+    for (const url of urls) {
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+  }
