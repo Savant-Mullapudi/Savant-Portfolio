@@ -504,10 +504,16 @@ section {
 }
 
 .experience-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
   margin-bottom: 3rem;
+}
+
+.experience-grid .experience-flip-card {
+  flex: 1 1 calc((100% - 4rem) / 3);
+  max-width: calc((100% - 4rem) / 3);
 }
 
 .education-grid {
@@ -634,7 +640,15 @@ section {
 
 /* Tablets: 1024px and below */
 @media screen and (max-width: 1024px) {
-  .experience-grid,
+  .experience-grid {
+    gap: 1.5rem;
+  }
+
+  .experience-grid .experience-flip-card {
+    flex: 1 1 calc((100% - 1.5rem) / 2);
+    max-width: calc((100% - 1.5rem) / 2);
+  }
+
   .education-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -655,7 +669,11 @@ section {
 
 /* Mobile: 768px and below */
 @media screen and (max-width: 768px) {
-  .experience-grid,
+  .experience-grid .experience-flip-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
   .education-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
